@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root{
+    --font-family: 'Roboto Mono', monospace;
+    --primary-color: #D4ADFC;
+    --title-color: #F6F6F6;
+}
+
+body{
+    background: linear-gradient(0deg, #0C134F, #1D267D, #5C469C);
+    min-height: 100vh;
+}
+
+/*Estilos do cabeçalho*/
+
+.cabecalho{
+    margin-bottom: 3%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho__div a{
+    margin: 0 10px;
+}
+
+.cabecalho-link{
+    color: var(--primary-color);
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.botao-historico {
+    background: transparent;
+    border: none;
+}
+
+.cabecalho-link span, .botao-historico{
+    font-size: 24px;
+}
+
+.cabecalho-link:hover{
+    color: var(--title-color);
+}
+
+/*Estilos do main*/
+.principal{
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /*Para garantir que tudo ficará centralizado*/
+    font-family: Var(--font-family);
+    font-weight: 400;
+    margin: 0 2% 2% 2%;
+}
+
+
+h1, h2{
+    font-size: 4em;
+    color: var(--title-color);
+    margin-bottom: 30px;
+}
+
+h3{
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.italico{
+    font-style: italic;
+}
+
+.mensagem{
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+.botao{
+    display: flex;
+    gap: 3px;
+    font-family: var(--font-family);
+    align-items: center;    
+    padding: 1em 2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    margin: 10px 0 10px 0;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.botao:hover{
+    background-color: var(--title-color);
+    font-size: 14px;
+}
+
+.box{
+    border: 3px solid var(--primary-color);
+    border-radius: 0 10%;
+    display: inline-block;
+    font-size: 3em;
+    padding: 2%;
+    margin: 3%;
+    color: var(--title-color);
+}
+
+.tentativas{
+    margin-top: 2px;
+}
+
+/*Estilos rodapé*/
+.rodape{
+    position: fixed;
+    bottom: 0.5em;
+    color: var(--primary-color);
+    margin-left: 1em;
+    font-size: 18px;
+}
+
+.rodape-div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.rodape-link{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.rodape-link i{
+    margin-right: 4px;
+}
+
+.rodape-link:hover{
+    color: var(--title-color);
+}
+
+.botaoAtivo{
+    display:none;
+}
+
+@media screen and (max-width: 571px) {
+    .cabecalho-link span{
+        display: none;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2, h3{
+        font-size: 24px;
+    }
+
+    .mensagem{
+        font-size: 20px;
+    }
+
+    .box{
+        font-size: 50px;
+    }
+
+    .cabecalho{
+        margin-bottom: 20%;
+    }
+
+    .rodape{
+        font-size: 16px;
+    }
+
+}
